@@ -16,4 +16,4 @@ jobs:
       run: |
         curl -Os https://uploader.codecov.io/latest/windows/codecov
         chmod +x codecov
-        ./codecov -t ${CODECOV_TOKEN=e866b872-f178-4f2f-b9f0-2c09f923de27}
+        ./codecov -t ${e866b872-f178-4f2f-b9f0-2c09f923de27}
