@@ -35,5 +35,13 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with unittest
+      run: python -m unittest
+    - name: codecov
+      run: coverge run -m unittest test_statistics.py
+    - name: send report
       run: |
-        python -m unittest
+        $ProgressPreference = 'SilentlyContinue' 
+        Invoke-WebRequest -Uri https://uploader.codecov.io/latest/windows/codecov.exe -Outfile 
+        codecov.exe 
+        .\codecov.exe
+        
