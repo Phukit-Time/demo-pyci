@@ -37,7 +37,7 @@ jobs:
     - name: Test with unittest
       run: python -m unittest
     - name: codecov
-      run: coverge run -m unittest test_statistics.py
+      run: coverage run -m unittest test_statistics.py
     - name: send report
       run: |
         $ProgressPreference = 'SilentlyContinue' 
