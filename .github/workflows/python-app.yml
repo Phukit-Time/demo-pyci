@@ -36,12 +36,8 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with unittest
       run: python -m unittest
-    - name: codecov
+    - name: Codecov
       run: coverage run -m unittest test_statistics.py
-    - name: send report
-      run: |
-        Set-Variable ProgressPreference SilentlyContinue
-        Invoke-WebRequest -Uri https://uploader.codecov.io/latest/windows/codecov.exe 
-        -Outfile codecov.exe
-        .\codecov.exe
+    - name: Codecov Report
+      uses: codecov/codecov-action@v3.1.1
         
