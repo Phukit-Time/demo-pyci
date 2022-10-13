@@ -1,5 +1,6 @@
 Continuous Integration Demo
 ============================
+[![codecov](https://codecov.io/gh/Phukit-Time/demo-pyci/branch/main/graph/badge.svg?token=LD46TSTROI)](https://codecov.io/gh/Phukit-Time/demo-pyci)
 ![example workflow](https://github.com/Phukit-Time/demo-pyci/actions/workflows/python-app.yml/badge.svg)
 
 This project demonstrates use of Github Actions to build and test a Python project.  
