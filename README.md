@@ -1,6 +1,5 @@
 Continuous Integration Demo
 ============================
-![example workflow](https://github.com/Phukit-Time/demo-pyci/actions/workflows/test.yml/badge.svg)
 ![example workflow](https://github.com/Phukit-Time/demo-pyci/actions/workflows/python-app.yml/badge.svg)
 
 This project demonstrates use of Github Actions to build and test a Python project.  
